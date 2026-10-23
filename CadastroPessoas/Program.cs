@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace CadastroPessoas
 {
-    internal class Program
+    public class Pessoa
     {
-        static void Main(string[] args)
+        public string Nome;
+        public int Idade;
+
+        public void Apresentar()
         {
+            Console.WriteLine("Nome: " + Nome);
+            Console.WriteLine("Idade: " + Idade);
         }
     }
 }
