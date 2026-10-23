@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Gerente.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

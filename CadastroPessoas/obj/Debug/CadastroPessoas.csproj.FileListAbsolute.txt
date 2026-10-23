@@ -1,0 +1,8 @@
+C:\source\repos\CadastroPessoas\CadastroPessoas\bin\Debug\CadastroPessoas.exe.config
+C:\source\repos\CadastroPessoas\CadastroPessoas\bin\Debug\CadastroPessoas.exe
+C:\source\repos\CadastroPessoas\CadastroPessoas\bin\Debug\CadastroPessoas.pdb
+C:\source\repos\CadastroPessoas\CadastroPessoas\obj\Debug\CadastroPessoas.csproj.AssemblyReference.cache
+C:\source\repos\CadastroPessoas\CadastroPessoas\obj\Debug\CadastroPessoas.csproj.SuggestedBindingRedirects.cache
+C:\source\repos\CadastroPessoas\CadastroPessoas\obj\Debug\CadastroPessoas.csproj.CoreCompileInputs.cache
+C:\source\repos\CadastroPessoas\CadastroPessoas\obj\Debug\CadastroPessoas.exe
+C:\source\repos\CadastroPessoas\CadastroPessoas\obj\Debug\CadastroPessoas.pdb
