@@ -10,12 +10,37 @@ namespace CadastroPessoas
     {
         static void Main(string[] args) 
         {
-            Cliente clienteSemCodigo = new Cliente("Bruno Lime", 31);
+            
             Cliente clienteComCodigo = new Cliente("Ana Souza", 28, "CLI-001");
 
             Funcionario funcionario = new Funcionario("Carlos Lima", 35, 4500.00m);
 
             Gerente gerente = new Gerente("Marina Alvez", 42, 7000.00m, "Tecnologia");
+
+
+            //Propriedade completa : atribuir e ler idade.
+            cliente.Idade = 29;
+            Console.WriteLine("Idade do cliente: "+ cliente.Idade)
+
+            // sobrecarga: mesmo metodo, argumentos diferentes
+            cliente.Apresentar();
+            cliente.Apresentar(true);
+
+            //Sobrescarga construtor: duas formas de criar cliente
+            Cliente clienteSemCodigo = new Cliente("Bruno Lime", 31);
+
+            //sobrescrita: cada tipo apresenta seu proprio dado
+            Pessoa[] pessoas = new Pessoa[]
+            {
+                cliente,
+                funcionario,
+                gerente,
+            };
+            foreach (Pessoa pessoa in pessoas)
+            {
+                Console.WriteLine();
+                pessoa.Apresentar();
+            }
 
             Console.WriteLine("=== CLIENTE ===");
             cliente.ExibirDadosCliente();
