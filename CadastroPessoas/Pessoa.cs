@@ -13,12 +13,24 @@ namespace CadastroPessoas
 
         public strign GetNome()
         {
-            return Nome;
+            return nome;
+        }
+        public strign SetNome(string novoNome)
+        {
+            nome = novoNome;
+        }
+        public strign GetIdade()
+        {
+            return idade;
+        }
+        public strign SetIdade(int novaIdade)
+        {
+            Idade = novaIdade;
         }
         public void Apresentar()
         {
-            Console.WriteLine("Nome: " + Nome);
-            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Nome: " + GetNome);
+            Console.WriteLine("Idade: " + GetIdade);
         }
         public Pessoa(string nome, int idade) 
         {
