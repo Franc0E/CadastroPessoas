@@ -25,5 +25,9 @@ namespace CadastroPessoas
         {
             CodigoCliente = codigoCliente;       
         }
+        public Cliente(string nome, int idade) : base(nome, idade)
+        {
+            CodigoCliente = "SEM-CODIGO";
+        }
     }
 }

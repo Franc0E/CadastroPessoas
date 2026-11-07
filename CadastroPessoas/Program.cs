@@ -10,7 +10,9 @@ namespace CadastroPessoas
     {
         static void Main(string[] args) 
         {
-            Cliente cliente = new Cliente("Ana Souza", 28, "CLI-001");
+            Cliente clienteSemCodigo = new Cliente("Bruno Lime", 31);
+            Cliente clienteComCodigo = new Cliente("Ana Souza", 28, "CLI-001");
+
             Funcionario funcionario = new Funcionario("Carlos Lima", 35, 4500.00m);
 
             Gerente gerente = new Gerente("Marina Alvez", 42, 7000.00m, "Tecnologia");
