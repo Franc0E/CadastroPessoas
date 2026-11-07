@@ -8,9 +8,13 @@ namespace CadastroPessoas
 {
     public abstract class Pessoa
     {
-        public string Nome;
-        public int Idade;
+        private string Nome;
+        private int Idade;
 
+        public strign GetNome()
+        {
+            return Nome;
+        }
         public void Apresentar()
         {
             Console.WriteLine("Nome: " + Nome);
