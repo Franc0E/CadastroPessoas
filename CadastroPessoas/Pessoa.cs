@@ -8,29 +8,35 @@ namespace CadastroPessoas
 {
     public abstract class Pessoa
     {
-        private string Nome;
-        private int Idade;
+        private string nome;
+        private int idade;
 
-        public strign GetNome()
+        public int Idade 
+        {
+            get
+            {
+                return idade;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    idade = value;
+                }
+            }
+        }
+
+        public string GetNome()
         {
             return nome;
         }
-        public strign SetNome(string novoNome)
+        public void SetNome(string novoNome)
         {
             nome = novoNome;
-        }
-        public strign GetIdade()
-        {
-            return idade;
-        }
-        public strign SetIdade(int novaIdade)
-        {
-            Idade = novaIdade;
-        }
         public void Apresentar()
         {
             Console.WriteLine("Nome: " + GetNome);
-            Console.WriteLine("Idade: " + GetIdade);
+            Console.WriteLine("Idade: " + Idade);
         }
         public Pessoa(string nome, int idade) 
         {
