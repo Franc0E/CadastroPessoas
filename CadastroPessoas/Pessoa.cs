@@ -36,9 +36,18 @@ namespace CadastroPessoas
         public void Apresentar()
         {
             Console.WriteLine("Nome: " + GetNome);
-            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Idade: " + idade);
         }
-        public Pessoa(string nome, int idade) 
+            public void Apresentar(bool mostrarTipo)
+            {
+                Apresentar();
+            
+            if (mostrarTipo)
+            {
+                Console.WriteLine("Tipo: Pessoa");
+            }
+            }
+            public Pessoa(string nome, int idade) 
         {
             Nome = nome;
             Idade = idade;

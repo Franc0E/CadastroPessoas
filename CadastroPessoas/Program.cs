@@ -11,7 +11,6 @@ namespace CadastroPessoas
         static void Main(string[] args) 
         {
             Cliente cliente = new Cliente("Ana Souza", 28, "CLI-001");
-
             Funcionario funcionario = new Funcionario("Carlos Lima", 35, 4500.00m);
 
             Gerente gerente = new Gerente("Marina Alvez", 42, 7000.00m, "Tecnologia");
@@ -24,6 +23,9 @@ namespace CadastroPessoas
 
             Console.WriteLine("=== GERENTE ===");
             gerente.ExibirDadosGerente();
+
+            cliente.Apresentar();
+            cliente.Apresentar(true);
 
             Console.ReadKey();
         }
