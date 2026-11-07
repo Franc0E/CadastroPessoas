@@ -15,6 +15,12 @@ namespace CadastroPessoas
             Console.WriteLine("Código do cliente: " + CodigoCliente);
             Apresentar();
         }
+        public override void Apresentar()
+        {
+            Console.WriteLine("Cliente: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Código: " + CodigoCliente);
+        }
         public Cliente(string nome, int idade, string codigoCliente) : base(nome, idade)
         {
             CodigoCliente = codigoCliente;       

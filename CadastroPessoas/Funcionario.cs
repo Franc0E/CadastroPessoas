@@ -20,6 +20,12 @@ namespace CadastroPessoas
             Console.WriteLine("Bônus: " + CalcularBonus());
             Apresentar();
         }
+        public override void Apresentar()
+        {
+            Console.WriteLine("Funcionário: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Salário: " + Salario);
+        }
         public Funcionario(string nome, int idade, decimal salario) : base(nome, idade)
         {
             Salario = salario;

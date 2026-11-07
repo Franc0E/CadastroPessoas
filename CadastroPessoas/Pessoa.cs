@@ -33,10 +33,12 @@ namespace CadastroPessoas
         public void SetNome(string novoNome)
         {
             nome = novoNome;
-        public void Apresentar()
+        }
+
+        public virtual void Apresentar()
         {
-            Console.WriteLine("Nome: " + GetNome);
-            Console.WriteLine("Idade: " + idade);
+            Console.WriteLine("Nome: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
         }
             public void Apresentar(bool mostrarTipo)
             {

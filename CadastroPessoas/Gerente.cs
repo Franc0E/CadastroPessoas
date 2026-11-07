@@ -20,5 +20,12 @@ namespace CadastroPessoas
         Console.WriteLine("Departamento: " + Departamento);
             ExibirDadosFuncionario();
         }
+        public override void Apresentar()
+        {
+            Console.WriteLine("Gerente: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Salário: " + Salario);
+            Console.WriteLine("Departamento: " + Departamento);
+        }
     }
 }
